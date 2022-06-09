@@ -7,12 +7,12 @@ const Couter = () => {
 
   const [count, setCount] = useState(0);
   //aprasome f-jas
-  const decrementCount = () =>{
-    setCount(count-1)
-  }
-  const incrementCount =()=>{
-    setCount(count+1)
-  }
+  const decrementCount = () => {
+    setCount(prevCount => prevCount -1)
+}
+const incrementCount = () => {
+    setCount(prevCount => prevCount +1)
+}
 
   return (
     <div>
